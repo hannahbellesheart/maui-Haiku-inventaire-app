@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Haiku.Mobile.Inventaire.View.PopupPage"
+             Shell.NavBarIsVisible="False"
+             Title="loginPage">
+    <ScrollView>
+
+        <StackLayout Margin="30">
+            <Image Source="tsi_logo.png" HeightRequest="50"  HorizontalOptions="StartAndExpand"/>
+
+            <StackLayout Margin="0,80">
+                <Label FontAttributes="Bold" FontSize="32" Text="Welcome Back" TextColor="Black"/>
+                <Label  FontFamily="PoppinsRegular" TextColor="DarkSlateGrey" 
+                       FontSize="16" Text="Sign in to continue"/>
+            </StackLayout>
+            <Label  x:Name="qrCodeResult"></Label>
+
+            <StackLayout>
+                <HorizontalStackLayout>
+                    <Label FontFamily="PoppinsRegular" TextColor="DarkSlateGray" 
+                       FontSize="16" Text="Scan a different code"
+                           />
+                    <Button
+                ImageSource="login_icon.png"
+                FontAttributes="Bold"
+                FontSize="30"
+                SemanticProperties.Hint="login"
+                WidthRequest="70" HeightRequest="70"
+
+                Clicked="OnImageButtonClicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FEA23B"
+                Padding="50, 20, 50, 20"
+                CornerRadius="16"
+                Margin="100,-20,10,50"
+                ContentLayout="Right, 15" >
+
+                    </Button>
+                </HorizontalStackLayout>
+
+
+                <Label FontFamily="PoppinsRegular" TextColor="Black" 
+                       FontSize="20" Text="Password" />
+                <Frame Margin="0,9" BackgroundColor="White" Opacity="0.3" CornerRadius="10" Padding="10,5" >
+
+                    <Entry x:Name="password" 
+                           BackgroundColor="Transparent"  Placeholder="Enter password" 
+                           TextColor="Black" Margin="5,5"
+                           PlaceholderColor="DimGray"
+                           IsPassword="True"/>
+                </Frame>
+
+            </StackLayout>
+            <Button
+                x:Name="btn_Login"
+                ImageSource="login_icon.png"
+                FontAttributes="Bold"
+                FontSize="15"
+                SemanticProperties.Hint="login"
+                Clicked="OnloginClicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FEA23B"
+                Padding="25, 13, 25, 20"
+                CornerRadius="16"
+                Margin="0,50,0,50"
+                Text="Se connecter"
+                ContentLayout="Right, 10"
+                WidthRequest="200" HeightRequest="50"
+>
+            </Button>
+
+        </StackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>

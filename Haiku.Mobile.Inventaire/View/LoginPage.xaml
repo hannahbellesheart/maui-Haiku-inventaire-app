@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Haiku.Mobile.Inventaire.View.LoginPage"
+             xmlns:gv="clr-namespace:BarcodeScanner.Mobile;assembly=BarcodeScanner.Mobile.Maui"
+             Title="Login scanner">
+    <Grid RowDefinitions="5*,1*">
+      
+        <!--Middle camera view-->
+        <gv:CameraView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" OnDetected="Camera_OnDetected" 
+                           TorchOn="False" VibrationOnDetected="True" ScanInterval="100" x:Name="Camera" />
+        <!--Bottom bar-->
+        <Grid
+            Grid.Row="1000" BackgroundColor="Orange">
+            <Label FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   FontAttributes="Bold" TextColor="White"
+                   >
+                Please scan a login code to continue.
+            </Label>
+        </Grid>
+    </Grid>
+</ContentPage>
+    

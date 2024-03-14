@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Haiku.Mobile.Inventaire.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Haiku.Mobile.Inventaire"
+    xmlns:view="clr-namespace:Haiku.Mobile.Inventaire.View"
+    Shell.FlyoutBehavior="Disabled">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="{OnPlatform WinUI={StaticResource Primary}, Default=White}" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Dark=#95FFFFFF, Light=#95000000}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Dark={StaticResource DarkBackground}, Light={StaticResource LightBackground}}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Dark={StaticResource LightBackground}, Light={StaticResource DarkBackground}}" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Dark=#95FFFFFF, Light=#95000000}" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Dark={StaticResource LightBackground}, Light={StaticResource DarkBackground}}" />
+            </Style>
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="ShellItem" ApplyToDerivedTypes="True" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <ShellContent
+     Shell.NavBarIsVisible="true"
+    ContentTemplate="{DataTemplate view:LoginPage}"
+    Route="LoginPage"
+    Title="Login Page" />
+
+    <ShellContent
+     Shell.NavBarIsVisible="true"
+        Title="Articles"
+        ContentTemplate="{DataTemplate view:ArticlesPage}"
+        Route="ArticlesPage" />
+
+    <ShellContent
+ Shell.NavBarIsVisible="true"
+    Title="Password"
+    ContentTemplate="{DataTemplate view:PopupPage}"
+    Route="PasswordPage" />
+
+    <ShellContent
+Shell.NavBarIsVisible="true"
+   Title="BarcodeScan"
+   ContentTemplate="{DataTemplate view:BarcodeScanPage}"
+   Route="BarcodeScanPage" />
+
+    <ShellContent
+Shell.NavBarIsVisible="true"
+   Title="AddArticle"
+   ContentTemplate="{DataTemplate view:AddArticlePage}"
+   Route="AddArticlePage" />
+
+</Shell>

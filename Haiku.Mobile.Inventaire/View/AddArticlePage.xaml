@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Haiku.Mobile.Inventaire.View.AddArticlePage"
+             xmlns:model="clr-namespace:Haiku.Mobile.Inventaire.Model"
+             xmlns:viewmodel="clr-namespace:Haiku.Mobile.Inventaire.ViewModel"
+             x:DataType="viewmodel:ArticlesViewModel"
+             Title="AddArticlePage">
+    <ScrollView>
+        <StackLayout Margin="30">
+            <StackLayout Margin="0,80">
+                <Label FontAttributes="Bold" FontSize="32" Text="Add an article" TextColor="Black"/>
+                <Label  FontFamily="PoppinsRegular" TextColor="DarkSlateGrey" 
+                       FontSize="16" Text="Please select a name"/>
+            </StackLayout>
+
+            <StackLayout>
+                <HorizontalStackLayout>
+                    <Label FontFamily="PoppinsRegular" TextColor="DarkSlateGray" 
+                       FontSize="16" Text="Scan a different code"
+                           />
+                    <Button
+                ImageSource="login_icon.png"
+                FontAttributes="Bold"
+                FontSize="30"
+                SemanticProperties.Hint="login"
+                WidthRequest="70" HeightRequest="70"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FEA23B"
+                Padding="50, 20, 50, 20"
+                CornerRadius="16"
+                Margin="100,-20,10,50"
+                ContentLayout="Right, 15" >
+
+                    </Button>
+                </HorizontalStackLayout>
+
+
+                <Label FontFamily="PoppinsRegular" TextColor="Black" 
+                       FontSize="20" Text="Article name:" />
+                <Frame Margin="0,9" BackgroundColor="White" Opacity="0.3" CornerRadius="10" Padding="10,5" >
+
+                    <Entry x:Name="articleName" 
+                           BackgroundColor="Transparent"  Placeholder="Enter name" 
+                           TextColor="Black" Margin="5,5"
+                           PlaceholderColor="DimGray"
+                           />
+                </Frame>
+
+            </StackLayout>
+            <Button
+                x:Name="btn_AddArticle"
+                ImageSource="login_icon.png"
+                FontAttributes="Bold"
+                FontSize="15"
+                SemanticProperties.Hint="login"
+                
+                HorizontalOptions="Center" 
+                BackgroundColor="#FEA23B"
+                Padding="25, 13, 25, 20"
+                CornerRadius="16"
+                Margin="0,50,0,50"
+                Text="Add Article"
+                ContentLayout="Right, 10"
+                WidthRequest="200" HeightRequest="50"
+                Clicked="btn_AddArticle_Clicked"
+                >
+            </Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
