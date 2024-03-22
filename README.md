@@ -2,6 +2,7 @@
 
 Bienvenue dans l'application de gestion des stocks Haiku, votre solution pour une gestion efficace des stocks ! 📦📊
 
+[App login using QR code scan](mobile.jpg)
 
 ## À propos
 
