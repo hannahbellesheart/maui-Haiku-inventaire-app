@@ -1,32 +1,32 @@
-# Haiku Application de gestion des stocks - Simplifiez vos processus de gestion des stocks
+# Haiku Inventory Management App - Simplify your inventory management processes
 
-Bienvenue dans l'application de gestion des stocks Haiku, votre solution pour une gestion efficace des stocks ! 📦📊
+Welcome to Haiku Inventory Management App, your solution for efficient inventory management! 📦📊
 
 <img src="mobile.jpg" alt="App login scan screen" width="35%" style="display"/>
 
-## À propos
+## About
 
-L'application de gestion des stocks Haiku est une plateforme complète de gestion des stocks développée avec .NET MAUI. Notre application est conçue pour aider les entreprises à simplifier leurs processus de gestion des stocks, suivre les niveaux de stocks et optimiser la gestion des stocks. Que vous soyez une petite entreprise ou une grande entreprise, l'application de gestion des stocks Haiku fournit les outils et les fonctionnalités dont vous avez besoin pour rester organisé et prendre des décisions de stock informées.
+Haiku Inventory Management App is a complete inventory management platform built with .NET MAUI. Our app is designed to help businesses streamline their inventory management processes, track inventory levels, and optimize inventory management. Whether you are a small business or a large enterprise, Haiku Inventory Management App provides the tools and features you need to stay organized and make informed inventory decisions.
 
-## Fonctionnalités clés
+## Key Features
 
-- **Suivi des stocks:** Suivez vos niveaux de stocks, y compris les quantités en stock.
-- **Gestion des produits:** Ajoutez, mettez à jour et supprimez facilement des produits de votre inventaire, y compris des détails tels que le SKU, la description et les prix.
-- **Scanner de stocks facile** Comptez facilement les articles en stock à l'aide d'un scanner de codes-barres et de codes QR intégré.
-- **Interface utilisateur intuitive:** Profitez d'une interface conviviale qui simplifie les tâches de gestion des stocks et améliore la productivité.
+- **Inventory Tracking:** Track your inventory levels, including quantities on hand.
+- **Product Management:** Easily add, update and delete products from your inventory, including details like SKU, description and pricing.
+- **Easy Inventory Scanner** Easily count inventory items using a built-in barcode and QR code scanner.
+- **Intuitive User Interface:** Enjoy a user-friendly interface that simplifies inventory management tasks and improves productivity.
 
-## Comment l'utiliser
+## How to use it
 
-L'utilisation de l'application de gestion des stocks Haiku est simple :
+Using the Haiku inventory management app is simple:
 
-1. Téléchargez et installez l'application de gestion des stocks Haiku sur votre appareil.
-2. Lancez l'application et connectez-vous avec vos identifiants ou créez un nouveau compte si vous êtes un nouvel utilisateur.
-3. Configurez votre inventaire en ajoutant vos produits, y compris des détails tels que le SKU, la description et les prix.
-4. Commencez à suivre votre inventaire en enregistrant les quantités de produits, les emplacements et la disponibilité.
+1. Download and install the Haiku inventory management app on your device.
+2. Launch the app and log in with your credentials or create a new account if you are a new user.
+3. Set up your inventory by adding your products, including details like SKU, description, and pricing.
+4. Start tracking your inventory by recording product quantities, locations, and availability.
 
-### Technologies utilisées
+### Technologies used
 
-- [.NET MAUI](https://dotnet.maui.net/) : Un framework multiplateforme pour la création d'interfaces utilisateur natives.
-- C# : Un langage de programmation polyvalent pour le développement d'applications .NET.
+- [.NET MAUI](https://dotnet.maui.net/) : A cross-platform framework for creating native user interfaces.
+- C#: A general-purpose programming language for developing .NET applications.
 
-Nous vous remercions de votre soutien et de votre dévouement. Bonne gestion des stocks ! 📦
+Thank you for your support and dedication. Happy inventory management! 📦
